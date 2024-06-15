@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mundo de los Hongos</title>
+  <script src="https://kit.fontawesome.com/34242d1290.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/estilohongos.css">
+</head>
+<body>
+
+<!--Encabezado con un logo de forma de tierra,nombre, boton ☰ y una lista[Inicio-Acerca de-Codo a codo- Contacto]-->
+<div class="nav-bar">
+    <div class="nav-container">
+        <div class="brand">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-earth"></i><!--Logo--> 
+            <span>Mundo de los Hongos</span><!--Nombre-->
+          </a>
+        </div>          
+            <p>
+                        <!--Boton ☰-->
+              <a id="btncolapse" class="btn btn-light" data-toggle="collapse" href="#listamenu" role="button" aria-expanded="true" aria-controls="listamenu">☰</a>
+            </p>            
+                         <!--Lista del menu-->
+            <div id="listamenu">
+              <nav>
+                <ul class="nav-list">
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./inicio-sesion.html">Iniciar Sesion</a></li>
+                    <li><a href="./registrese.html">Registrarse</a></li>
+                    <li><a href="#footer-contacto">Acerca de</a></li>
+                    <li><a href="./contacto.html">Contacto</a></li>
+                </ul>
+              </nav>
+            </div>
+    </div>
+</div>
+
+<main>
+<div id="container-home" class="container">
+      <!-- Contenido: tarjetas en filas hasta 3 columnas. 1 columna cuando la ventana se minimiza. -->
+      <div class="row row-cols-1 row-cols-md-3">
+      
+        <div class="col md-4 mb-3 "> <!--se divide la fila en tres tarjetas dispersada con md 4 cada una, y md(margin-bootom de 3%)-->
+              <!--tarjeta 1-->
+          <div class="card h-100"> <!--altura de la tarjeta de 100%-->
+
+                      <!--La tarjeta se compone de titulo, cuerpo(con imagen y texto) y un boton en el pie-->
+                      <!--misma representacion para el resto de las tarjetas-->
+                      <div class="card-header"> 
+                          Amanita muscaria
+                      </div>
+                      <img class="card-img-top" src="https://as1.ftcdn.net/v2/jpg/03/92/64/62/1000_F_392646231_BlaDW03QFHkSjNR79J1wf3Onpwyqw3Vx.jpg"  alt="...">
+                      <div class="card-body"> 
+                        <p class="card-text">Es reconocido por su sombrero rojo con manchas blancas y su tallo blanco tiene un anillo de gran tamaño.</p>
+                      </div>
+                      <div class="card-footer">
+                      <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalAmanitaMuscaria"> Ver mas info</a>
+                    </div>
+        </div>
+        </div>
+
+        <div class="col md-4 mb-3">
+          <div class="card h-100"> <!--tarjeta 2-->
+                          <div class="card-header">
+                              Clitocybe odora 
+                          </div>
+                          <img class="card-img-top" src="https://as1.ftcdn.net/v2/jpg/01/41/82/44/1000_F_141824484_0BXyG6tv9JTn4bp9sK2Q7eb3rmhAbrBS.jpg" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Es apreciado por su sabor agradable y su aroma distintivo al anís.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalClitocybeOdora"data-button="Cremini"> Ver mas info</a>
+                        </div>
+        </div>
+        </div>
+
+        <div class="col md-4 mb-3">
+          <div class="card h-100"><!--tarjeta 3-->
+                          <div class="card-header">
+                            Amanita phalloides 
+                          </div>
+                          <img class="card-img-top" src="https://as2.ftcdn.net/v2/jpg/03/19/31/27/1000_F_319312769_2KcbBQ8O5gh03eoIwpEIGvQcI86PZNSR.jpg" alt="...">
+                          <div class="card-body">       
+                            <p class="card-text">Conocida como hongo de la muerte, es muy parecido a algunas especies que son comestibles, por lo que se han dado casos de envenenamiento accidental.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalAmanitaPhalloides"data-button="Shiitake"> Ver mas info</a>
+                        </div>
+        </div>
+        </div>
+
+        <div class="col md-4 mb-3">
+          <div class="card h-100"><!--tarjeta 4-->
+                          <div class="card-header">
+                            Cortinarius violaceus
+                          </div>
+                          <img class="card-img-top" src="https://as1.ftcdn.net/v2/jpg/06/34/80/84/1000_F_634808453_zUzG4cL4JsjQBK8IRit2snzmYpbLqqiR.jpg"  alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Se caracteriza por su sombrero de color púrpura oscuro a violeta, que puede medir entre 5 y 15 centímetros de diámetro, y tiene una forma convexa que puede volverse aplanada.</p>
+                          </div>
+                          <div class="card-footer">
+                            <a href="#" class="btn btn-primary btn-block mt-3"data-toggle="modal" data-target="#ModalCortinarius"data-button="Cortinarius"> Ver mas info</a>
+                        </div>
+          </div>
+        </div>        
+      </div>
+</div>
+  
+<!-- primer modal -->
+<!--Se muestra titulo, video, texto, texto en listas-->
+<!--misma representacion para los otros modales-->
+ <div class="modal fade" id="ModalAmanitaMuscaria" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Amanita muscaria</h5>
+      </div>
+      
+      <div class="modal-body"> 
+        <p id="modalContent"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/Ru1Z8oKkF9U?si=JMTqm6r3klWOU65D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <h4>Familia:</h4>
+        <ul>
+            <li>Amanitaceae</li>                  
+        </ul>
+        <h4>Formado por:</h4>
+          <ul>
+              <li><b>Sombrero</b>: Rojo brillante con manchas blancas o blancas y amarillas. Puede alcanzarun diámetros de 25 cms</li>
+              <li><b>Pie</b>: Es blanco y cilíndrico. Puede tener una altura de hasta de 20 cms.
+               </li>
+              <li><b>Laminas</b>: Son blancas y están dispuestas radialmente desde el centro del sombrero hacia afuera. </li>
+          </ul>  
+          <h4>Historia</h4><p> Es conocida por diversas culturas alrededor del mundo, especialmente en áreas donde crece de forma natural, 
+          como Europa, Asia y América del Norte. Es conocido por sus propiedades psicoactivas y ha sido utilizado en rituales religiosos, 
+          chamanismo y tradiciones folclóricas. Sin embargo, es importante tener en cuenta que Amanita muscaria es tóxico y puede ser 
+          peligroso si se consume en grandes cantidades.
+          </p>        
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- segundo modal -->
+
+<div class="modal fade" id="ModalClitocybeOdora" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Clitocybe odora</h5>          
+      </div>
+      
+      <div class="modal-body"> 
+        <p id="modalContent"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/w4cWRXN96vs?si=BMvUs6X0AkOIqJTb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+        <h4>Familia:</h4>
+        <ul>
+            <li>Tricholomataceae</li>                  
+        </ul>
+        <h4>Formado por:</h4>
+          <ul>
+              <li><b>Sombrero</b>: Suele tener un diámetro de entre 5 y 15 centímetros. Es convexo y se expande volviéndose plano. 
+                El color puede variar de gris verdoso a azul verdoso o marrón verdoso.</li>
+              <li><b>Pie</b>: Cilíndrico, curvado con una longitud de 4 a 8 cms.
+               </li>
+              <li><b>Laminas</b>: Son blancas y espaciadas, a veces con un tinte verdoso. 
+              </li>
+          </ul>  
+        <h4>Historia</h4><p>
+          Es conocido comúnmente como el "clitocibe oloroso" debido a su distintivo aroma a anís o regaliz. Se encuentra en bosques de coníferas 
+          y de hoja caduca en Europa y América del Norte. Es comestible y tiene un sabor agradable, lo que lo convierte en un hongo popular para 
+          la recolección y la cocina en algunas regiones. Sin embargo, como con todos los hongos, es importante recolectarlos con precaución y 
+          solo si se tiene certeza de su identificación.
+        </p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- tercer modal -->
+<div class="modal fade" id="ModalAmanitaPhalloides" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Amanita phalloides</h5>         
+      </div>
+
+      <div class="modal-body"> 
+            <p id="modalContent"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/qShikQRUEqM?si=3i_TWZuJ5Jm05Hgn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></p>
+            <h4>Familia:</h4>
+            <ul>
+                <li>Amanitaceae</li>                  
+            </ul>
+            <h4>Formado por:</h4>
+              <ul>
+                  <li><b>Sombrero</b>: Es convexo cuando joven y se convierte más plano con la madurez. Puede tener un diámetro de entre 5 y 15 cms.
+                     El color varía de verde oliva a marrón verdoso, a veces con tonos más claros en el borde.</li>
+                  <li><b>Pie</b>: Es blanco, cilíndrico y suele tener un anillo blanco y membranoso en la parte superior.
+                    A menudo tiene una "volva" en la base, que es una envoltura en forma de saco que rodea parcialmente el pie.
+                   </li>
+                  <li><b>Laminas</b>: Son blancas y están dispuestas radialmente debajo del sombrero. Son libres, lo que significa que no están unidas al pie.
+                  </li>
+              </ul>  
+            <h4>Historia</h4><p>
+              Es conocida comúnmente como la "seta de la muerte" o "hongo de la muerte" debido a su extrema toxicidad. Contiene toxinas mortales que 
+              pueden causar daño hepático grave e incluso la muerte si se consume. Es responsable de la mayoría de las intoxicaciones por hongos mortales 
+              en todo el mundo. A pesar de su peligrosidad, Amanita phalloides es a menudo confundida con otras setas comestibles, lo que lleva a accidentes graves. 
+              sSe encuentra en bosques de coníferas y de hoja caduca en Europa, Asia y América del Norte.
+              </p>
+      </div>
+      
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- cuarto modal -->
+<div class="modal fade" id="ModalCortinarius" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalTitle">Cortinarius violaceus</h5>
+      </div>
+      
+      <div class="modal-body">
+          <p id="modalContent">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/PKbOcmVY_Qo?si=p1KcXllMlm5UyuL-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </p>
+          <h4>Familia:</h4>
+            <ul>
+                <li>Cortinarius</li>                  
+            </ul>
+          <h4>Formado por:</h4>
+              <ul>
+                  <li><b>Sombrero</b>: de diámetro de entre 5 y 15 centímetros, de forma convexa que se vuelve plano o algo concavo en el centro. De color purpura o violeta oscuro.</li>
+                  <li><b>Pie</b>: tiene una forma ligeramente ensanchada en la base.
+                   </li>
+                  <li><b>Laminas</b>: pueden ser un poco más claras que el sombrero y el pie, pero mantienen la tonalidad morada.</li>
+              </ul>                
+            <h4>Historia:</h4>
+            <p class="textsangria">.............................</p>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+</main>
+
+  
+<footer id="footer-contacto" class="mt-5 text-center">
+    <!-- Pie de página aquí -->
+    <p>Equipo 15 - Comisión 24109 - Codo A Codo</p>
+    <p>Maximiliano Aguero</p>
+    <p>Franco Olivera</p>
+    <p>Maribel Palacios</p>
+    <p>Ariel Nicosia</p>
+    <p>Tobias Causevic</p>
+    <p>Mauro Andres Ferra</p>
+    <p>Contacto: info@mundo-hongos.com</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
