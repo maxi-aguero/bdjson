@@ -11,7 +11,6 @@
 
   <div class="container">
     <h1 class="mt-5">Mayorista MAXSUR</h1>
-    <div id="resultado" class="mb-3"></div>
       <div class="row row-cols-1 row-cols-md-5" id="results">
 
       <!-- Aquí se mostrarán las tarjetas dinámicamente -->
@@ -19,6 +18,20 @@
     
   </div>
 
+  <div class="row mt-3 justify-content-end">
+    <div class="col-auto">
+      <p>Importe:$ </p>
+    </div>
+    <div class="col-auto">
+    <p id="subtotal">0 </p>
+    </div>
+    <div class="col-auto">
+
+      <button class="btn btn-warning me-2">Comprar carrito</button>
+      <button id="borrar-carrito" class="btn btn-danger">Borrar carrito</button>
+    </div>
+  </div>
+</div>
 
   <script type="module" src="./mostrarmo.js"></script>
 
